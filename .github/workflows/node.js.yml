@@ -29,13 +29,6 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
 
-
-    - name: Use GITHUB_TOKEN
-      run: |
-        echo "Using the GITHUB_TOKEN to interact with the repository."
-        # Example API call using curl
-        curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/OWNER/REPO/contents/somefile.txt
-
     - name: Deploy with gh-pages
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
