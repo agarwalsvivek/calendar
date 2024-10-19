@@ -10,7 +10,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const WebPack = {
-    mode: 'development', // or 'production'
     entry: './src/index.tsx', // Update this if your entry file is different
     output: {
         filename: 'bundle.js',

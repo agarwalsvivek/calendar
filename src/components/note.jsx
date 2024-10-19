@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
+// type NoteType = {
+// note, onNoteInputChange
+// }
+
 const Note = ( props ) => {
 	const { note, onNoteInputChange } = props;
 	const [ inputNote , setInput ] = useState( note );
