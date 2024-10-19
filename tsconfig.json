@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    /* Base Options */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2021",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    // "moduleDetection": "force",
+    "isolatedModules": true,
+    // "verbatimModuleSyntax": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    /* if Workin with JS Doc*/
+    // "module": "NodeNext",
+    // "noEmit": true,
+    // "checkJs": true,
+
+    /* if your code dosen't run in Dom*/
+     "lib": ["ES2021", "DOM"],  // include necessary library files
+
+    "module": "commonjs",
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "jsx": "react"
+  },
+  "include": [
+    "src"
+  ]
+}
