@@ -12,7 +12,7 @@ const liStyle = {
 
 const Calendar = (props) => {
   const { onDayClick, daysInMonth, selectedDay } = props;
-  console.log("daysInMonth ===> ", daysInMonth);
+  //console.log("daysInMonth ===> ", daysInMonth);
 
   const createSpan = (text, current = false) => (
     <span
