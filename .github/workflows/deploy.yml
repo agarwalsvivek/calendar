@@ -1,8 +1,4 @@
 name: Deploy
-permissions:
-  contents: write
-  actions: write
-
 on:
   push:
     branches: main
