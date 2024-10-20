@@ -66,7 +66,7 @@ const App = () => {
           daysInMonth={daysInMonth}
           onDayClick={(date) => {
             setSelectedDay(date);
-            console.log(" selectedDay ===>", date);
+            console.log(" selectedDay =>", date);
             let selectedNote = state.get(date);
             setNote(selectedNote ? selectedNote : "");
           }}
